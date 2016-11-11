@@ -1,5 +1,6 @@
 $(document).ready(function() {
-$('#search-button').on("click", function() {
+$('#search-button').on("click", function(event) {
+  event.preventDefault();
   $('.col-4').empty();
   gapi.client.setApiKey('AIzaSyACxCVy8DYNaFHOF3ucEYGHuyYW7X-Bjwo');
   gapi.client.load('youtube', 'v3', function() {
