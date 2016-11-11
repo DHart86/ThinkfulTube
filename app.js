@@ -62,7 +62,7 @@ function makeRequest() {
         var prev = response.prevPageToken;
         vidThumburl = item.snippet.thumbnails.default.url;
         vidThumbimg = '<pre><img id="thumb" src="' + vidThumburl + '" alt="No  Image Available." style="width:204px;height:128px"></pre>';
-        output = '<div class="col-4" id="vidDiv"><div class="title"><a href="http://youtube.com/watch?v=' + vidID + '">' + title + '</a></div><br><iframe src="http://www.youtube.com/embed/' + vidID + '"></iframe></div>';
+        output = '<div class="col-4" id="vidDiv"><div class="title"><a target="_blank" href="http://youtube.com/watch?v=' + vidID + '">' + title + '</a></div><br><iframe src="http://www.youtube.com/embed/' + vidID + '"></iframe></div>';
         $('#results').append(output);
         nextToken = next
         prevToken = prev
@@ -94,7 +94,7 @@ function makeRequest() {
           var prev = response.prevPageToken;
           vidThumburl = item.snippet.thumbnails.default.url;
           vidThumbimg = '<pre><img id="thumb" src="' + vidThumburl + '" alt="No  Image Available." style="width:204px;height:128px"></pre>';
-          output = '<div class="col-4" id="vidDiv"><div class="title"><a href="http://youtube.com/watch?v=' + vidID + '">' + title + '</a></div><br><iframe src="http://www.youtube.com/embed/' + vidID + '"></iframe></div>';
+          output = '<div class="col-4" id="vidDiv"><div class="title"><a target="_blank" href="http://youtube.com/watch?v=' + vidID + '">' + title + '</a></div><br><iframe src="http://www.youtube.com/embed/' + vidID + '"></iframe></div>';
           $('#results').append(output);
           prevToken = prev
         })
