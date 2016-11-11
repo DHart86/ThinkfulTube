@@ -151,3 +151,7 @@ a:hover {
 .nexprev {
   padding: 10px;
 }
+
+img {
+	width: 100%;
+}
