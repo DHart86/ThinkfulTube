@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #111;
+  padding-top: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: 'Oswald', sans-serif;
+}
+
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  .col-3 {
+    width: 25%;
+    min-width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.row::after {
+  clear: both;
+}
+
+#search-container {
+  background-color: #F2ECF2;
+  padding-top: 100px;
+  position: relative;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+#buttons {
+  width: 100%;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  background-color: #222;
+  color: lightgray;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#vidDiv {
+  position: relative;
+}
+
+iframe {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.title {
+  position: absolute;
+  padding-right: 10px;
+  color: #ccc;
+}
+
+.col-4 {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 3px solid #F2ECF2;
+  text-align: center;
+  height: auto;
+  background-color: black;
+  ;
+}
+
+#search-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7F839C;
+  font-size: 20px;
+  color: white;
+  box-shadow: 2px 2px 12px black;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+}
+
+#search-button:hover {
+  background-color: #5B5E70;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  font-size: 50px;
+  position: absolute;
+  top: 2px;
+  right: 20px;
+  color: #111
+}
+
+a {
+  color: #ddd;
+  text-transform: capitalize;
+}
+
+a:hover {
+  color: #5B5ECE;
+}
+
+.hidden {
+  display: none;
+}
+
+#page {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.nexprev {
+  padding: 10px;
+}
