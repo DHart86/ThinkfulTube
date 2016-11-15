@@ -32,7 +32,7 @@ function makeRequest() {
       vidThumbimg = '<pre><img id="thumb" src="' + vidThumburl + '" alt="No  Image Available." style="width:204px;height:128px"></pre>';
       output = '<div class="col-4" id="vidDiv"><div class="title"><a target="_blank" href="https://youtube.com/watch?v=' + vidID + '">' + title + '</a></div><br><iframe src="https://www.youtube.com/embed/' + vidID + '"></iframe></div>';
       $('#results').append(output);
-      $('h1, #next, #prev').removeClass('hidden');
+      $('h2, #next, #prev').removeClass('hidden');
       nextToken = next
       prevToken = prev
     })
