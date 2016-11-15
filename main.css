@@ -153,5 +153,14 @@ a:hover {
 }
 
 img {
-	width: 100%;
+	width: 30%;
+	text-align: right;
+	float: right;
+	margin-left: auto;
+}
+
+h1 {
+	float: left;
+	font-size: 80px;
+	color: #222;
 }
