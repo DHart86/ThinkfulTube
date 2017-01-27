@@ -1,12 +1,12 @@
     console.log("pre")
-$(document).ready(function() {
+$(document).ready(function(e) {
   console.log("starting")
-$('#search-button').on("click", function() {
+$('#search-button').on("click", function(e) {
   event.preventDefault();
   console.log("hmm")
   $('.col-4').empty();
   gapi.client.setApiKey('AIzaSyACxCVy8DYNaFHOF3ucEYGHuyYW7X-Bjwo');
-  gapi.client.load('youtube', 'v3', function() {
+  gapi.client.load('youtube', 'v3', function(e) {
     console.log("pre")
     makeRequest();
     console.log("post")
