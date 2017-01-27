@@ -3,32 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  
-
   <title>CatTube</title>
-  
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+     <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
    <script src="app.js" type="text/javascript"></script>
    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <div class="row" id="search-container">
-  
-  <a href="https://dhart86.github.io/ThinkfulTube/?"><h1>CAT TUBE</h1><img src="tube-41085.png" alt="CatTube!"></a>
-  <div id="buttons">
-  <form autocomplete="off">
-    <input id="query" placeholder='Your search here...' type="text"/><button id="search-button">Search</button>
-    </form>
+
+
+<div class="row" id="search-container">
+  <div class="col-sm-12" id="buttons">
+    <label><input id="query" placeholder='Your search here...' type="text"/><button id="search-button">Search</button></label>
     <div id="container">
-      <h2 class="hidden">Search Results</h2>
+      <h1 class="hidden">Search Results</h1>
     </div>
-    <div id="results" class="row"></div>
-    <div id="page">
+    <div id="results" class="row">
+    </div>
+    <div class="col-sm-12" id="page">
       <button id="prev" class="nexprev hidden">Prev</button>
       <button id="next" class="nexprev hidden">Next</button>
     </div>
   </div>
+  
+</div>
+
+
   
  
 </body>
