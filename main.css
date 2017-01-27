@@ -125,13 +125,13 @@ a:hover {
 
 img {
   width:100px;
-  position:absolute;
+  position:fixed;
   bottom:0px;
   right:0px;
 }
 
 #bubble {
-  position:absolute;
+  position:fixed;
   background-color:whitesmoke;
   width:100px;
   height:70px;
