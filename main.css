@@ -24,10 +24,6 @@ label {
   width:100%;
 }
 
-footer {
-  text-align:center;
-}
-
 #search-container {
   background-color: #F2ECF2;
   padding-top: 100px;
@@ -123,7 +119,7 @@ a:hover {
 }
 
 #page {
-  text-align: right;
+  text-align: center;
   margin-right: 20px;
 }
 
