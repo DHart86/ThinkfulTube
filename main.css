@@ -14,8 +14,14 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-label {
+.contain {
   width: 50%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+label {
+  width:100%;
 }
 
 #search-container {
@@ -35,7 +41,9 @@ input {
   width: 70%;
   background-color: #222;
   color: lightgray;
+  font-weight: lighter;
   padding: 10px;
+  border:0px;
   border: 1px solid black;
   font-size:19px
 }
@@ -51,7 +59,17 @@ iframe {
 }
 
 h1 { 
-  padding:20px
+  padding:20px;
+  text-align:left;
+  font-weight:bold;
+  font-size:4em;
+  margin-bottom:-10px;
+font-family: 'Bahiana', cursive;
+}
+
+h4 {
+  text-align: center;
+  padding-top:15px;
 }
 
 .title {
@@ -63,8 +81,10 @@ h1 {
 #search-button {
   padding: 10px;
   background-color: #7F839C;
+  font-weight:lighter;
   font-size: 20px;
   color: white;
+  border:0px;
   margin-bottom: 15px;
 }
 
@@ -102,6 +122,25 @@ a:hover {
   margin-right: 20px;
 }
 
+img {
+  width:100px;
+  position:absolute;
+  bottom:0px;
+  right:0px;
+}
+
+#bubble {
+  position:absolute;
+  background-color:whitesmoke;
+  width:100px;
+  height:70px;
+  bottom:75px;
+  right:80px;
+      border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 12px;
+}
+
 .resultImg {
   margin-top:25px;
 }
@@ -111,7 +150,7 @@ a:hover {
 }
 
 @media screen and (max-width: 680px) {
-  label {
+  .contain {
     width: 100%;
   }
   input{
@@ -122,6 +161,9 @@ a:hover {
   }
   #search-button {
     width:100%;
+  }
+  h1 {
+    padding-left:5px;
   }
 }
 

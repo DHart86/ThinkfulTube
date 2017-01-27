@@ -44,12 +44,16 @@ function makeRequest(b) {
 }
 
 
-$('#next').on("click", function() {
+$('#next').on("click", function(e) {
   makeRequest(commonVars.next);
 })
 
-$('#prev').on("click", function() {
+$('#prev').on("click", function(e) {
   makeRequest(commonVars.prev);
+})
+
+$('img').on("click", function(e) {
+  $('#bubble').toggleClass("hidden");
 })
 
 });
