@@ -52,6 +52,11 @@ input {
   position: relative;
 }
 
+.row {
+  margin-right:0px;
+  margin-left:0px;
+}
+
 iframe {
   width: 100%;
   margin-top: 40px;
